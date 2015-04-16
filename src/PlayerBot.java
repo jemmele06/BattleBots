@@ -4,9 +4,13 @@
 class PlayerBot implements Bot {
 
     private World world;
+    private int x;
+    private int y;
 
-    public PlayerBot(World _world) {
+    public PlayerBot(World _world, int _x, int _y) {
         world = _world;
+        x = _x;
+        y = _y;
     }
 
     public void step() {
@@ -19,5 +23,13 @@ class PlayerBot implements Bot {
 
     public boolean isDead() {
         return !isAlive();
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 }

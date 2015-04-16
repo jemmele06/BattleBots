@@ -2,9 +2,13 @@
  *
  */
 public interface Bot {
-    public void step();
+    void step();
 
-    public boolean isAlive();
+    boolean isAlive();
 
-    public boolean isDead();
+    boolean isDead();
+
+    int getX();
+
+    int getY();
 }
